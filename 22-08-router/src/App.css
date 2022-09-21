@@ -1,0 +1,13 @@
+
+ 
+.parentdiv{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-color:rgb(24, 27, 28);
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  color: white;
+} 

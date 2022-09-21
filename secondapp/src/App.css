@@ -1,0 +1,17 @@
+.parentDiv{
+  text-align: center;
+}
+.center{
+  text-align: center;
+}
+.nav-link.active{
+  color: lightblue;
+  border-bottom: 3px solid #fff;
+}
+.text-center{
+  text-align: center;
+}
+li{
+  color:white;
+  padding: 4px;
+}
