@@ -22,6 +22,9 @@ function App() {
       { id: 6, name: "VBL", contact: 845621203, age: 45, salary: 65000 },
     ];
 
+    const counterupdate=( )=>{
+console.log("something")
+    }
   return (
     
 <div>
@@ -33,6 +36,8 @@ function App() {
 
       <br></br>
       <Header></Header>
+
+      <button onClick={counterupdate}>Counter</button>
     </div>
   );
 }
