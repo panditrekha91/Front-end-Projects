@@ -22,22 +22,34 @@ function App() {
       { id: 6, name: "VBL", contact: 845621203, age: 45, salary: 65000 },
     ];
 
-    const counterupdate=( )=>{
-console.log("something")
+    const[another,setanother]=useState(0)    // for this state we are taking the value from user
+
+    const counterupdate=(event)=>{
+      setanother(event.target.value)
     }
+
+const filtdata= peopleData.filter((a)=>{
+  return a.salary>another            //here apply filter by user accepted value then pass to Table component then only greater salary than another stat value will show
+})
+
+
   return (
     
 <div>
-      <Table datapass={peopleData}></Table>
-
-     
+      <Table datapass={filtdata}></Table>
       {state}
       <button onClick={updatehandler}>Increase Count</button>
-
       <br></br>
       <Header></Header>
+    Enter User salary here: <input type="text" onChange={counterupdate}></input><br></br>
+    <h>{another}</h>
 
-      <button onClick={counterupdate}>Counter</button>
+
+
+
+
+
+      
     </div>
   );
 }
